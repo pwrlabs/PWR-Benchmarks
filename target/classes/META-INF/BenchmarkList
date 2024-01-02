@@ -1,0 +1,6 @@
+JMH S 28 Test.JMHSample_01_HelloWorld S 65 Test.jmh_generated.JMHSample_01_HelloWorld_wellHelloThere_jmhTest S 14 wellHelloThere S 10 Throughput E A 1 1 1 E E E E E E E E E E E E E E E E E 
+JMH S 26 EWER.EWERDecodingBenchmark S 65 EWER.jmh_generated.EWERDecodingBenchmark_benchmarkDecode1_jmhTest S 16 benchmarkDecode1 S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MICROSECONDS E E 
+JMH S 26 EWER.EWERDecodingBenchmark S 65 EWER.jmh_generated.EWERDecodingBenchmark_benchmarkDecode2_jmhTest S 16 benchmarkDecode2 S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MICROSECONDS E E 
+JMH S 26 EWER.EWEREncodingBenchmark S 64 EWER.jmh_generated.EWEREncodingBenchmark_benchmarkEncode_jmhTest S 15 benchmarkEncode S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MICROSECONDS E E 
+JMH S 16 SNT.SNTBenchmark S 48 SNT.jmh_generated.SNTBenchmark_benchmark_jmhTest S 9 benchmark S 11 AverageTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MICROSECONDS E E 
+JMH S 20 State.StateBenchmark S 47 State.jmh_generated.StateBenchmark_test_jmhTest S 4 test S 10 SampleTime E A 1 1 1 E E E E E E E E E E E E E E U 12 MICROSECONDS E E 
