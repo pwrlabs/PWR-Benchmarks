@@ -48,7 +48,7 @@ avgt   5    15689.136  ±  2739.039  us/op
 
 On average, EWER Encoding was capable of encoding a 50MB block holding 500k transactions in 15.6 Milliseconds.
  
-##Encoding Time Complexity
+## Encoding Time Complexity
 
 1. **Fixed-Size Components Encoding**: The encoding of fixed-size components (Previous Block Number, Previous Block Hash, Blockchain Version, Timestamp, Submitter Signature) is a constant-time operation, \( O(1) \), as each component's size is constant and independent of the size of the block or the number of transactions and signatures.
 
@@ -81,7 +81,7 @@ The process of block decoding reverses the steps taken during encoding to retrie
 
 By meticulously following these steps, the EWER algorithm efficiently decodes each block on the PWR Chain, ensuring the integrity and accuracy of the data for blockchain operations.
 
-##Decoding Benchmark
+## Decoding Benchmark
 
 The following benchmark was ran on one of our team members PC, and used only 1 thread.
 The benchmark decodes a 50 MB blocks holding 400 Validator Signatures and 500k transactions.
@@ -92,7 +92,7 @@ avgt   5    54.696  ±  1.818   us/op
 On Average, EWER Decoding was capable of decoding a 50MB blocks holding 500k transactions in 0.054 Milliseconds.
 In other words, EWER Decoding is capable of decoding 18,518 such big blocks in 1 second.
 
-##Decoding Time Complexity
+## Decoding Time Complexity
 
 
 1. **Fixed-Size Components Decoding**: This is a constant-time operation \( O(1) \) since each component has a fixed size.
