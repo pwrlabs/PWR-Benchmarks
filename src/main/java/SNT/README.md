@@ -51,7 +51,7 @@ Extract and convert components from the byte array:
    - Nonce
    - IP Address
 
-### **Decoding Time Complexity **
+### **Decoding Time Complexity**
 
 Extracting the identifier, nonce, amount, recipient, and other info that might be in the transactions involves a series of bitwise operations and array copying. Bitwise operations are O(1), and array copying can be considered O(n), where n is the length of the part being copied. However, since the length of each part is predefined and fixed and does not scale with input size, these operations can be treated as O(1).
 
