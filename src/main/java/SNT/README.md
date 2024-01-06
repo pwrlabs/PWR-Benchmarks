@@ -56,3 +56,12 @@ Extract and convert components from the byte array:
 Extracting the identifier, nonce, amount, recipient, and other info that might be in the transactions involves a series of bitwise operations and array copying. Bitwise operations are O(1), and array copying can be considered O(n), where n is the length of the part being copied. However, since the length of each part is predefined and fixed and does not scale with input size, these operations can be treated as O(1).
 
 Given these considerations, the overall time complexity of the SNT decoding process can be approximated as O(1), meaning it should execute in constant time regardless of the transaction size
+
+### **Decoding Benchmark**
+
+The following benchmark was ran on one of our team members PC, and used only 1 thread.
+
+ Mode  Cnt  Score     Error  Units
+ avgt   5   0.014  ±  0.001  us/op
+
+On average, SNT was capable of decoding 71,428,571 (71.4 Million) transactions per second
