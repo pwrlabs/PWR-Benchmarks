@@ -25,7 +25,16 @@ Prior to appending the validator signatures, a 2-byte integer is integrated into
 
 When incorporating transactions, each transaction is preceded by a 2-byte integer. Similar to the validator's signature, this integer denotes the size of the transaction and is crucial in the decoding process. It conveniently signals the number of bytes that must be read to accurately extract the transaction.
 
-| ID | Name | Description |
-| --- | --- | --- |
-| 1 | Item A | Description of Item A |
-| 2 | Item B | Description of Item B |
+| Size | Name | Size | Name |
+| --- | --- | --- | --- |
+| 8 | Previous Block Number | 
+| 32 | Previous Block Hash | 
+| 2 | Blockchain Version |
+| 8 | Timestamp |
+| 1200 | Submitter SIgnature |
+| 2 | Validator Sgnatures Size | Y x 1200 | Validator SIgnature |
+| 2 | Transaction Size | X | Transaction |
+| 2 | Transaction Size | X | Transaction |
+| 2 | Transaction Size | X | Transaction |
+| etc... | etc... | etc... | etc... |
+
